@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>select2 (with Datalist Support)</title>
+
+  <link rel="stylesheet" href="select2.css">
+  <link rel="stylesheet" href="demo.css">
+
+</head>
+
+<body>
+
+  <h1>select2</h1>
+
+  <h2>Standard &lt;select> Usage</h2>
+
+  <select>
+    <option>Apple</option>
+    <option>Orange</option>
+    <option>Banana</option>
+  </select>
+
+  <h2>Now to make input w/ datalist work...</h2>
+
+  <input type="text" list="fruits">
+  <datalist id="fruits">
+    <option>Apple</option>
+    <option>Orange</option>
+    <option>Banana</option>
+  </datalist>
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  <script src="select2.js"></script>
+  <script>
+    $("select").select2();
+  </script>
+
+</body>
+
+</html>
